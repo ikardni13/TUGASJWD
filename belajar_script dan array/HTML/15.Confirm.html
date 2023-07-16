@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Looping</title>
+</head>
+<body>
+  <script>
+    // Looping menggunakan for loop
+    for (let i = 0; i < 100; i++) {
+      document.write("Ulangi kalimat ini! ");
+    }
+    
+    // Looping menggunakan repeat
+    document.write("Ulangi kalimat ini! ".repeat(100));
+    
+    // Looping menggunakan while loop
+    var ulangi = confirm("Apakah Anda ingin mengulang?");
+    var counter = 0;
+    while (ulangi) {
+      counter++;
+      var bintang = "*".repeat(counter) + "<br>";
+      document.write(counter + ": " + bintang);
+      ulangi = confirm("Apakah Anda ingin mengulang?");
+    }
+  </script>
+</body>
+</html>

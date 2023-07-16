@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kode 2 - Perulangan While</title>
+</head>
+<body>
+  <h1>Kode 2 - Perulangan While</h1>
+  <script>
+    var ulangi = true;
+    var counter = 0;
+    while (ulangi) {
+      var jawab = confirm("Apakah Anda mau mengulang?");
+      counter++;
+      if (!jawab) {
+        ulangi = false;
+      }
+    }
+    document.write("Perulangan sudah dilakukan sebanyak " + counter + " kali");
+  </script>
+</body>
+</html>

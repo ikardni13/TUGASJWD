@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Operasi pada Array</title>
+</head>
+<body>
+  <h1>Operasi pada Array</h1>
+
+  <script>
+    var bunga = ["Mawar", "Melati", "Anggrek", "Sakura"];
+
+    // Hapus Anggrek
+    bunga.splice(2, 1);
+
+    document.write("<h3>Array setelah menghapus Anggrek:</h3>");
+    document.write("<ul>");
+    for (var i = 0; i < bunga.length; i++) {
+      document.write("<li>" + bunga[i] + "</li>");
+    }
+    document.write("</ul>");
+
+    bunga.splice(1);
+
+    document.write("<h3>Array setelah menggunakan splice(1):</h3>");
+    document.write("<ul>");
+    for (var i = 0; i < bunga.length; i++) {
+      document.write("<li>" + bunga[i] + "</li>");
+    }
+    document.write("</ul>");
+  </script>
+</body>
+</html>

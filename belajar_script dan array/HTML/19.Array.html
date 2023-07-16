@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Array Operations</title>
+</head>
+<body>
+  <h1>Array Operations</h1>
+
+  <script>
+    var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+
+    // Apakah kacang sudah ada di dalam array tanaman?
+    var adaKacang = tanaman.includes("Kacang");
+    console.log(adaKacang); // Output: true
+
+    // Apakah bayam ada?
+    var adaBayam = tanaman.includes("Bayam");
+    console.log(adaBayam); // Output: false
+
+    var alfabet = ['a', 'f', 'z', 'e', 'r', 'g'];
+    var angka = [3, 1, 2, 6, 8, 5];
+
+    console.log(alfabet.sort()); // Output: ["a", "e", "f", "g", "r", "z"]
+    console.log(angka.sort()); // Output: [1, 2, 3, 5, 6, 8]
+  </script>
+</body>
+</html>
